@@ -43,7 +43,7 @@ async function checkWeather(city) {
 
   switch (weatherData.weather[0].main) {
     case "Clouds":
-            weatherImage.src = "/images/clouds.png";
+            weatherImage.src = "https://minhajkhan11.github.io/weatherApp/images/clouds.png";
       break;
     case "Rain":
       if(isDaytime(weatherData.sys.sunrise, weatherData.sys.sunset, weatherData.timezone)){
