@@ -47,51 +47,51 @@ async function checkWeather(city) {
       break;
     case "Rain":
       if(isDaytime(weatherData.sys.sunrise, weatherData.sys.sunset, weatherData.timezone)){
-      weatherImage.src = "/images/rain-day.png";
+      weatherImage.src = "https://minhajkhan11.github.io/weatherApp/images/rain-day.png";
       }
       else{
-      weatherImage.src = "/images/rain-night.png";
+      weatherImage.src = "https://minhajkhan11.github.io/weatherApp/images/rain-night.png";
       }
       break;
     case "Drizzle":
-      weatherImage.src = "/images/heavy-rain.png";
+      weatherImage.src = "https://minhajkhan11.github.io/weatherApp/images/heavy-rain.png";
       break;
     case "Snow":
-      weatherImage.src = "/images/snow.png";
+      weatherImage.src = "https://minhajkhan11.github.io/weatherApp/images/snow.png";
       break;
     case "mist":
-      weatherImage.src = "/images/haze-mist-fog.png";
+      weatherImage.src = "https://minhajkhan11.github.io/weatherApp/images/haze-mist-fog.png";
       break;
     case "haze":
-      weatherImage.src = "/images/haze-mist-fog.png";
+      weatherImage.src = "https://minhajkhan11.github.io/weatherApp/images/haze-mist-fog.png";
       break;
     case "fog":
-      weatherImage.src = "/images/haze-mist-fog.png";
+      weatherImage.src = "https://minhajkhan11.github.io/weatherApp/images/haze-mist-fog.png";
       break;
     case "smoke":
-      weatherImage.src = "/images/smoke.png";
+      weatherImage.src = "https://minhajkhan11.github.io/weatherApp/images/smoke.png";
       break;
     case "Sand":
-      weatherImage.src = "/images/sand.png";
+      weatherImage.src = "https://minhajkhan11.github.io/weatherApp/images/sand.png";
       break;
     case "Dust":
-      weatherImage.src = "/images/sand.png";
+      weatherImage.src = "https://minhajkhan11.github.io/weatherApp/images/sand.png";
       break;
     case "Ash":
-      weatherImage.src = "/images/ash.png";
+      weatherImage.src = "https://minhajkhan11.github.io/weatherApp/images/ash.png";
       break;
     case "Tornado":
-      weatherImage.src = "/images/tornado.png";
+      weatherImage.src = "https://minhajkhan11.github.io/weatherApp/images/tornado.png";
       break;
     case "Thunderstorm":
-      weatherImage.src = "/images/thunder-storm.png";
+      weatherImage.src = "https://minhajkhan11.github.io/weatherApp/images/thunder-storm.png";
       break;
     case "Clear":
        if(isDaytime(weatherData.sys.sunrise, weatherData.sys.sunset, weatherData.timezone)){
-      weatherImage.src = "/images/clear-day.png";
+      weatherImage.src = "https://minhajkhan11.github.io/weatherApp/images/clear-day.png";
       }
       else{
-      weatherImage.src = "/images/clear-night.png";
+      weatherImage.src = "https://minhajkhan11.github.io/weatherApp/images/clear-night.png";
       }
       break;
     }

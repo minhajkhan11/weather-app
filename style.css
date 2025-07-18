@@ -211,7 +211,7 @@ sup {
 }
 
 .sunrise-img {
-  background-image: url(/images/sunrise.png);
+  background-image: url(https://minhajkhan11.github.io/weatherApp/images/sunrise.png);
   height: 27px;
   width: 27px;
   background-position: center;
@@ -220,7 +220,7 @@ sup {
 
 
 .sunset-img {
-  background-image: url(/images/sunset.png);
+  background-image: url(https://minhajkhan11.github.io/weatherApp/images/sunset.png);
   height: 27px;
   width: 27px;
   background-position: center;
@@ -229,7 +229,7 @@ sup {
 
 
 .cloudiness-img {
-  background-image: url(/images/cloudiness.png);
+  background-image: url(https://minhajkhan11.github.io/weatherApp/images/cloudiness.png);
   height: 27px;
   width: 27px;
   background-position: center;
@@ -238,7 +238,7 @@ sup {
 
 
 .pressure-img {
-  background-image: url(/images/pressure.png);
+  background-image: url(https://minhajkhan11.github.io/weatherApp/images/pressure.png);
   height: 27px;
   width: 27px;
   background-position: center;
@@ -246,7 +246,7 @@ sup {
 }
 
 .wind-img {
-  background-image: url(/images/wind.png);
+  background-image: url(https://minhajkhan11.github.io/weatherApp/images/wind.png);
   height: 27px;
   width: 27px;
   background-position: center;
@@ -254,7 +254,7 @@ sup {
 }
 
 .humidity-img {
-  background-image: url(/images/humidity.png);
+  background-image: url(https://minhajkhan11.github.io/weatherApp/images/humidity.png);
   height: 27px;
   width: 27px;
   background-position: center;
@@ -262,7 +262,7 @@ sup {
 }
 
 .feels-img {
-  background-image: url(/images/feels.png);
+  background-image: url(https://minhajkhan11.github.io/weatherApp/images/feels.png);
   height: 27px;
   width: 27px;
   background-position: center;
@@ -270,7 +270,7 @@ sup {
 }
 
 .visible-img {
-  background-image: url(/images/visible.png);
+  background-image: url(https://minhajkhan11.github.io/weatherApp/images/visible.png);
   height: 27px;
   width: 27px;
   background-position: center;
