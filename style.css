@@ -45,7 +45,7 @@ nav .app-title {
 nav .icon {
   height: 36px;
   width: 36px;
-  background-image: url(/images/icon.png);
+  background-image: url(https://minhajkhan11.github.io/weatherApp/images/icon.png);
   background-position: center;
   background-size: cover;
 }
