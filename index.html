@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Weather Check</title>
+</head>
+
+<body>
+
+  <div class="weather-app">
+    <div class="container">
+
+      <nav>
+        <div class="app-title">
+          <div class="icon"></div>
+          <div class="app-name">Wether Check</div>
+        </div>
+        <div class="input-field">
+          <input type="text" id="input-box" placeholder="Search for cities">
+          <button id="search-btn"><i class="fa-solid fa-search"></i></button>
+        </div>
+      </nav>
+
+      <div class="city-box">
+        <div class="city-row">
+          <div><span id="city">City...</span><span class="country"></span></div>
+          <span class="temperature">--<sup style="font-size: 20px; font-weight: 500;">°C</sup></span>
+          <span class="lowest">--<sup style="font-size: 20px; font-weight: 500;">°C</sup></span>
+        </div>
+        <img src="/images/clouds.png" id="weatherImg" alt="">
+      </div>
+
+
+      <div class="weather-details">
+        <p class="header">Weather Details</p>
+        <div class="detail-container">
+          <div class="detail-box">
+            <div>
+              <p class="detail">Sunrise</p>
+              <p class="sunrise-time detail-value ">--:--</p>
+            </div>
+            <div class="sunrise-img">
+            </div>
+          </div>
+          <div class="detail-box">
+            <div>
+              <p class="detail">Sunset</p>
+              <p class="sunset-time detail-value ">--:--</p>
+            </div>
+            <div class="sunset-img">
+            </div>
+          </div>
+          <div class="detail-box">
+            <div>
+              <p class="detail">Cloudiness</p>
+              <p class="cloudiness-per detail-value ">--<span>%</span></p>
+            </div>
+            <div class="cloudiness-img">
+            </div>
+          </div>
+          <div class="detail-box">
+            <div>
+              <p class="detail">Pressure</p>
+              <p class="pressure-mb detail-value ">-- mb</p>
+            </div>
+            <div class="pressure-img">
+            </div>
+          </div>
+          <div class="detail-box">
+            <div>
+              <p class="detail">Wind</p>
+              <p class="wind-speed detail-value ">-- km/h</p>
+            </div>
+            <div class="wind-img">
+            </div>
+          </div>
+          <div class="detail-box">
+            <div>
+              <p class="detail">Humidity</p>
+              <p class="humidity detail-value ">--<span>%</span></p>
+            </div>
+            <div class="humidity-img">
+            </div>
+          </div>
+          <div class="detail-box">
+            <div>
+              <p class="detail">Feels Like</p>
+              <p class="feels-like detail-value ">--&deg;</p>
+            </div>
+            <div class="feels-img">
+            </div>
+          </div>
+          <div class="detail-box">
+            <div>
+              <p class="detail">Visibility</p>
+              <p class="visibility-dis detail-value ">--km</p>
+            </div>
+            <div class="visible-img">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
