@@ -57,6 +57,8 @@ nav input {
   background-color: rgba(0, 38, 255, 0.13);
   padding: 10px 20px;
   border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
   font-size: 15px;
 }
 
@@ -64,21 +66,24 @@ nav .input-field {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
 }
 
 button {
   background-color: rgb(111, 94, 209);
   outline: none;
-  border: 2px solid white;
+  border: none;
   padding: 10px 20px;
   border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
   color: white;
   font-size: 15px;
   transition: all ease .2s;
 }
 
-
+button:hover {
+  background-color: rgb(79, 58, 197);
+}
 
 .city {
   font-weight: 700;
@@ -164,12 +169,15 @@ sup {
   background-color: rgba(0, 38, 255, 0.13);
   border-radius: 20px;
   margin-top: 10px;
+  width: auto !important;
 }
 
 .detail-container {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .weather-details .header {
@@ -269,12 +277,12 @@ sup {
   background-size: cover;
 }
 
-#city{
+#city {
   font-size: 35px;
   font-weight: 700;
 }
 
-.country{
+.country {
   color: #202020;
   font-size: 18px;
   font-weight: 700;
@@ -283,15 +291,82 @@ sup {
 
 
 
+@media screen and (max-width:300px) {
+  .detail-box {
+    max-width: 140px !important;
+    gap: 3px !important;
+  }
+
+  #weatherImg{
+    width: 60px;
+  }
+
+  #city{
+    font-size: 30px;
+  }
+    .temperature{
+    font-size: 30px !important; 
+  }
+  .lowest{
+    font-size: 20px;
+  }
+    nav input {
+    width: 100px !important;  
+  }
+}
+
+
+
+
+@media screen and (max-width:375px) {
+  .detail-box {
+    max-width: 133px !important;
+    gap: 7px;
+  }
+}
+
+
+@media screen and (max-width:400px) {
+  .detail-box {
+    width: 150px !important;
+  }
+}
+
 
 @media screen and (max-width:500px) {
   nav input {
-    width: auto;
+    width: 140px;
   }
+
 
   .container {
     overflow: auto;
+    margin: 23px auto;
+    max-width: 90vw;
+
   }
+
+  .detail-box {
+    width: 160px;
+  }
+
+  .detail-value {
+    font-size: 15px;
+  }
+
+  .detail-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .weather-details {
+    width: 400px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
 }
 
 

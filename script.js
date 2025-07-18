@@ -1,4 +1,4 @@
-console.log("running");
+
 let apiKey = "6df571e5f97e9a79f40294c3d1f85eeb";
 let inputBox = document.getElementById("input-box");
 let searchBtn = document.getElementById("search-btn");
@@ -34,7 +34,6 @@ async function checkWeather(city) {
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   let weatherData = await fetch(`${url}`).then((res) => res.json());
 
-  console.log(weatherData)
 
   cityName.innerHTML = `${weatherData.name}` + " ";
   country.innerHTML = `${weatherData.sys.country}`
