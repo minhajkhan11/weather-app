@@ -288,7 +288,7 @@ sup {
   font-weight: 700;
 }
 
-#welcomeScreen{
+#welcomeScreen {
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
@@ -302,15 +302,15 @@ sup {
   color: gray;
 }
 
-#welcomeScreen img{
+#welcomeScreen img {
   height: 300px;
 }
 
-#errorScreen img{
+#errorScreen img {
   height: 300px;
 }
 
-#errorScreen{
+#errorScreen {
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
@@ -332,21 +332,24 @@ sup {
     gap: 3px !important;
   }
 
-  #weatherImg{
+  #weatherImg {
     width: 60px;
   }
 
-  #city{
+  #city {
     font-size: 30px;
   }
-    .temperature{
-    font-size: 30px !important; 
+
+  .temperature {
+    font-size: 30px !important;
   }
-  .lowest{
+
+  .lowest {
     font-size: 20px;
   }
-    nav input {
-    width: 100px !important;  
+
+  nav input {
+    width: 100px !important;
   }
 }
 
@@ -374,7 +377,23 @@ sup {
     width: 140px;
   }
 
-  .app-name{
+
+  #welcomeScreen h2{
+    font-size: 24px;
+  }
+
+  #welcomeScreen img {
+    height: 200px;
+    margin: 20px 0;
+  }
+
+  #errorScreen img {
+    height: 200px;
+    margin: 20px 0;
+  }
+
+
+  .app-name {
     font-size: 13px;
   }
 

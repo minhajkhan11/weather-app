@@ -30,7 +30,7 @@ searchBtn.addEventListener("click", () => {
 });
 document.querySelector(".city-box").style.display = "none"
 document.querySelector(".weather-details").style.display = "none"
-  document.querySelector("#errorScreen").style.display = "none"
+document.querySelector("#errorScreen").style.display = "none"
 
 async function checkWeather(city) {
   
