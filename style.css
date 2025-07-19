@@ -377,6 +377,15 @@ sup {
     width: 140px;
   }
 
+  body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-color: #27A2CC;
+  font-family: nunito, poppins, roboto, system-ui, sans-serif;
+}
+
 
   #welcomeScreen h2{
     font-size: 24px;
