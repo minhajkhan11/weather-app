@@ -375,19 +375,20 @@ sup {
 @media screen and (max-width:500px) {
   nav input {
     width: 140px;
+    padding: 10px 15px;
+
+  }
+
+  .weather-app{
+    margin-top: 100px;
   }
 
   body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  background-color: #27A2CC;
-  font-family: nunito, poppins, roboto, system-ui, sans-serif;
-}
+    align-items: start;
+  }
 
 
-  #welcomeScreen h2{
+  #welcomeScreen h2 {
     font-size: 24px;
   }
 
