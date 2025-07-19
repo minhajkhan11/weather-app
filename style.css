@@ -295,13 +295,34 @@ sup {
   align-items: center;
   text-align: center;
   height: auto;
-  gap: 24px;
+  margin-bottom: 56px;
 }
 
 #welcomeScreen div p {
   color: gray;
 }
 
+#welcomeScreen img{
+  height: 300px;
+}
+
+#errorScreen img{
+  height: 300px;
+}
+
+#errorScreen{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  margin-bottom: 56px;
+}
+
+#errorScreen div p {
+  color: gray;
+}
 
 
 

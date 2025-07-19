@@ -30,6 +30,7 @@ searchBtn.addEventListener("click", () => {
 });
 document.querySelector(".city-box").style.display = "none"
 document.querySelector(".weather-details").style.display = "none"
+  document.querySelector("#errorScreen").style.display = "none"
 
 async function checkWeather(city) {
   
@@ -37,15 +38,23 @@ async function checkWeather(city) {
   let weatherData = await fetch(`${url}`).then((res) => res.json());
 
   if(weatherData.cod == `404`){
-    console.log("error")
+    document.querySelector(".city-box").style.display = "none"
+   document.querySelector(".weather-details").style.display = "none"
+  document.querySelector("#welcomeScreen").style.display = "none"
+    document.querySelector("#errorScreen").style.display = "flex"
+  
   }
   else if(weatherData.cod == `400`){
-    console.log("error 2")
+    document.querySelector(".city-box").style.display = "none"
+   document.querySelector(".weather-details").style.display = "none"
+  document.querySelector("#welcomeScreen").style.display = "none"
+    document.querySelector("#errorScreen").style.display = "flex"
   }
   else {
   document.querySelector(".city-box").style.display = "flex"
 document.querySelector(".weather-details").style.display = "block"
 document.querySelector("#welcomeScreen").style.display = "none"
+    document.querySelector("#errorScreen").style.display = "none"
   cityName.innerHTML = `${weatherData.name}` + " ";
   country.innerHTML = `${weatherData.sys.country}`
   temp.innerHTML = Math.round(`${weatherData.main.temp}`) + "<sup>&deg;C</sup>";
