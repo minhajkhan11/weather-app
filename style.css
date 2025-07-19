@@ -12,7 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(111, 94, 209);
+  background-color: #27A2CC;
   font-family: nunito, poppins, roboto, system-ui, sans-serif;
 }
 
@@ -69,7 +69,7 @@ nav .input-field {
 }
 
 button {
-  background-color: rgb(111, 94, 209);
+  background-color: #27A2CC;
   outline: none;
   border: none;
   padding: 10px 20px;
@@ -82,7 +82,7 @@ button {
 }
 
 button:hover {
-  background-color: rgb(79, 58, 197);
+  background-color: #03c0ca;
 }
 
 .city {
@@ -288,6 +288,20 @@ sup {
   font-weight: 700;
 }
 
+#welcomeScreen{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  gap: 24px;
+}
+
+#welcomeScreen div p {
+  color: gray;
+}
+
 
 
 
@@ -329,6 +343,7 @@ sup {
 @media screen and (max-width:400px) {
   .detail-box {
     width: 150px !important;
+    gap: 7px;
   }
 }
 
@@ -336,6 +351,10 @@ sup {
 @media screen and (max-width:500px) {
   nav input {
     width: 140px;
+  }
+
+  .app-name{
+    font-size: 13px;
   }
 
 
@@ -348,6 +367,7 @@ sup {
 
   .detail-box {
     width: 160px;
+    gap: 7px;
   }
 
   .detail-value {

@@ -28,13 +28,24 @@ searchBtn.addEventListener("click", () => {
     checkWeather(inputBox.value);
     inputBox.value = "";
 });
+document.querySelector(".city-box").style.display = "none"
+document.querySelector(".weather-details").style.display = "none"
 
 async function checkWeather(city) {
   
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   let weatherData = await fetch(`${url}`).then((res) => res.json());
 
-
+  if(weatherData.cod == `404`){
+    console.log("error")
+  }
+  else if(weatherData.cod == `400`){
+    console.log("error 2")
+  }
+  else {
+  document.querySelector(".city-box").style.display = "flex"
+document.querySelector(".weather-details").style.display = "block"
+document.querySelector("#welcomeScreen").style.display = "none"
   cityName.innerHTML = `${weatherData.name}` + " ";
   country.innerHTML = `${weatherData.sys.country}`
   temp.innerHTML = Math.round(`${weatherData.main.temp}`) + "<sup>&deg;C</sup>";
@@ -105,7 +116,7 @@ async function checkWeather(city) {
   cloudiNess.innerHTML = Math.round(`${weatherData.clouds.all}`) + "%";
   visibilityDis.innerHTML =  Math.round( weatherData.visibility / 1000) + " km";
   windSpeed.innerHTML =  Math.round( weatherData.wind.speed * 3.6) + " km/h";
-  
+}
 }
 
 function timeConvert(unixTimestamp){
